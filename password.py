@@ -10,12 +10,12 @@ banner = r'''
 '''
 note = '\nNote: Save the password so you do not forget!'
 
-def generator(pass_quantity, pass_len):
+def generator(pass_number, pass_length):
     chars = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz'
 
-    for pq in range(pass_quantity):
+    for pq in range(pass_number):
         password = ''
-        for i in range(pass_len):
+        for i in range(pass_length):
             password += random.choice(chars)
 
         print("Password generated: {}".format(password))
@@ -23,8 +23,8 @@ def generator(pass_quantity, pass_len):
 
 if __name__ == '__main__':
     print(banner)
-    pass_quantity = int(input("Quantidade de passwords: "))
-    pass_len = int(input('Tamanho da senha: '))
+    pass_number = int(input("Number of passwords: "))
+    pass_length = int(input("Number of characters: "))
     print('')
-    generator(pass_quantity, pass_len)
+    generator(pass_number, pass_length)
     print(note)
