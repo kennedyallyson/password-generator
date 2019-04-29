@@ -1,7 +1,9 @@
 # Password Generator
+
 Simple python script to randomly generate passwords
 
-## How to run
+## Usage
+
 ```
-python password.py
+$ python password.py
 ```
