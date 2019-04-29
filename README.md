@@ -1,6 +1,6 @@
 # Password Generator
 
-Simple python script to randomly generate passwords
+Simple python script to randomly generate passwords.
 
 ## Screenshot
 
