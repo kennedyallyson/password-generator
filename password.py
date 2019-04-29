@@ -7,8 +7,9 @@ banner = r'''
 ||__|||__|||__|||__|||__|||__|||__|||__|||_______|||__|||__|||__|||__|||__|||__|||__|||__|||__||
 |/__\|/__\|/__\|/__\|/__\|/__\|/__\|/__\|/_______\|/__\|/__\|/__\|/__\|/__\|/__\|/__\|/__\|/__\|
 
+
 '''
-note = '\nNote: Save the password so you do not forget!'
+
 
 def generator(pass_number, pass_length):
     chars = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz'
@@ -17,14 +18,17 @@ def generator(pass_number, pass_length):
         password = ''
         for i in range(pass_length):
             password += random.choice(chars)
-
         print("Password generated: {}".format(password))
 
 
-if __name__ == '__main__':
+def main():
     print(banner)
     pass_number = int(input("Number of passwords: "))
     pass_length = int(input("Number of characters: "))
     print('')
     generator(pass_number, pass_length)
-    print(note)
+    print('\nNote: Save the password so you do not forget!')
+
+
+if __name__ == '__main__':
+    main()
